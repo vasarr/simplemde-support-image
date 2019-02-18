@@ -1,0 +1,28 @@
+{
+    "name": "laravel-admin-ext/simplemde-support-image",
+    "description": "laravel-admin extension of simplemde,support paste drop upload image",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "vasar",
+            "email": "panwenmingchn@hotmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "encore/laravel-admin": "~1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vasar\\Simplemde\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vasar\\Simplemde\\SimplemdeServiceProvider"
+            ]
+
+        }
+    }
+}
