@@ -8,7 +8,8 @@
 ```shell
 $ composer require vasar/simplemde-support-uploadimage
 
-$ php artisan vendor:publish --provider=Vasar\Simplemde\SimplemdeServiceProvider
+$ php artisan vendor:publish
+> select [Vasar\Simplemde\SimplemdeServiceProvider]
 ```
 
 ## Usage
