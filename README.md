@@ -6,22 +6,45 @@
 ## Installing
 
 ```shell
-$ composer require laravel-admin-ext/simplemde-support-image -vvv
+$ composer require vasar/simplemde-support-uploadimage
+
+$ php artisan vendor:publish --provider=Vasar\Simplemde\SimplemdeServiceProvider
 ```
 
 ## Usage
+In the extensions section of the config/admin.php file
+```
+'extensions' => [
 
-TODO
+    'simplemde' => [
 
-## Contributing
+        // Set to false if you want to disable this extension
+        'enable' => true,
 
-You can contribute in one of three ways:
+        // If you want to set an alias for the calling method
+        //'alias' => 'markdown',
 
-1. File bug reports using the [issue tracker](https://github.com//aravel-admin-ext/simplemde-support-image/issues).
-2. Answer questions or fix bugs on the [issue tracker](https://github.com//aravel-admin-ext/simplemde-support-image/issues).
-3. Contribute new features or update the wiki.
+        // Editor configuration
+        'config' => [
 
-_The code contribution process is not very formal. You just need to make sure that you follow the PSR-0, PSR-1, and PSR-2 coding guidelines. Any new code contributions must be accompanied by unit tests where applicable._
+        ]
+    ]
+]
+```
+
+The configuration of the editor can be found in [Simplemde Documentation](https://github.com/sparksuite/simplemde-markdown-editor#configuration) and configuration upload image.
+
+```
+'config' => [
+    'autofocus'   => true,
+    'spellChecker' => false,
+    'upload' => 'upload url',
+    'uploadFieldName' => 'xxx_filedName', // 上传字段 默认：image
+    'jsonFieldName' => 'xxx_jsonFieldName', // json 返回字段 默认：image
+    
+    ....
+]
+```
 
 ## License
 
