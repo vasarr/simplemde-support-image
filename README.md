@@ -34,6 +34,7 @@ In the extensions section of the config/admin.php file
 
 The configuration of the editor can be found in [Simplemde Documentation](https://github.com/sparksuite/simplemde-markdown-editor#configuration) and configuration upload image.
 
+```
 'config' => [
     'autofocus'   => true,
     'spellChecker' => false,
@@ -43,6 +44,7 @@ The configuration of the editor can be found in [Simplemde Documentation](https:
     
     ....
 ]
+```
 
 ## License
 
