@@ -1,5 +1,5 @@
 {
-    "name": "simplemde_upload",
+    "name": "vasar/simplemde-support-uploadimage",
     "description": "laravel-admin extension of simplemde,support paste drop upload image",
     "license": "MIT",
     "authors": [
