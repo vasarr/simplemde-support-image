@@ -1,12 +1,12 @@
-<h1 align="center"> aravel-admin-ext/simplemde-support-image </h1>
+<h1 align="center"> laravel-admin simplemde 编辑器 </h1>
 
-<p align="center"> laravel-admin extension of simplemde,support paste drop upload image.</p>
+<p align="center">支持粘贴，拖拽图片上传</p>
 
 
 ## Installing
 
 ```shell
-$ composer require /aravel-admin-ext/simplemde-support-image -vvv
+$ composer require laravel-admin-ext/simplemde-support-image -vvv
 ```
 
 ## Usage
