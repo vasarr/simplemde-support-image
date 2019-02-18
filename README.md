@@ -6,7 +6,7 @@
 ## Installing
 
 ```shell
-$ composer require laravel-admin-ext/simplemde-support-image -vvv
+$ composer require vasar/simplemde-support-uploadimage -vvv
 ```
 
 ## Usage
