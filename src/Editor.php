@@ -57,6 +57,9 @@ class Editor extends Field
 
         $uplod_url = $config['upload'];
         $cs=csrf_token();
+        $uploadFieldName = !empty($config['uploadFieldName']) ? $config['uploadFieldName'] : 'image';
+        $jsonFieldName = !empty($config['jsonFieldName']) ? $config['jsonFieldName'] : 'image';
+
 
         $config = json_encode($config);
 
@@ -66,8 +69,8 @@ class Editor extends Field
 
 var inlineAttachmentConfig = {
             uploadUrl: "$uplod_url",
-            uploadFieldName: 'image',
-            jsonFieldName: 'image',
+            uploadFieldName: "$uploadFieldName",
+            jsonFieldName: "$jsonFieldName",
             extraHeaders: {
                 'X-CSRF-Token': '$cs'
             }
