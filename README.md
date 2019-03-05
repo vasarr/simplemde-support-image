@@ -47,6 +47,11 @@ The configuration of the editor can be found in [Simplemde Documentation](https:
 ]
 ```
 
+use in form
+```
+$form->simplemde('content');
+```
+
 ## License
 
 MIT
